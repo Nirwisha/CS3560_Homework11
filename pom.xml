@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.homework_11</groupId>
-    <artifactId>idfk</artifactId>
+    <artifactId>test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,4 +13,14 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!-- Source: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.14.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
 </project>
