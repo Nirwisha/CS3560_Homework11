@@ -8,6 +8,7 @@ public class VendingMachine {
     private Snack selectedSnack;
     private float totalPrice = 0;
     private StateOfVendingMachine state = new IdleState();
+    private SnackDispenser snackDispenser;
 
     // these deal with snack
     public void addSnack(Snack snack) {
@@ -38,6 +39,15 @@ public class VendingMachine {
 
     public float getMoney() {
         return totalPrice;
+    }
+
+    //this handles the snackdispenser (ref)
+    public void setSnackDispenser(SnackDispenser dispenser) {
+        this.snackDispenser = dispenser;
+    }
+
+    public SnackDispenser getSnackDispenser() {
+        return snackDispenser;
     }
 
     public void setState(StateOfVendingMachine state) {
