@@ -18,8 +18,8 @@ public class Driver {
         machine.setSnackDispenser(dispenser);
 
         //stand in right now
-        machine.selectSnack();
-        machine.waitingForMoney();
+        machine.selectSnack("Cheetos");
+        machine.waitingForMoney(10.30f);
         machine.dispenseSnack();
 
     }

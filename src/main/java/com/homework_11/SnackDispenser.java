@@ -1,6 +1,6 @@
 package com.homework_11;
 
-public abstract class SnackDispenser {
+public class SnackDispenser {
     private SnackDispenseHandler chain;
 
     public void setChain(SnackDispenseHandler chain) {

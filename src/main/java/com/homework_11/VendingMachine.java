@@ -41,6 +41,10 @@ public class VendingMachine {
         return totalPrice;
     }
 
+    public void resetMoney() {
+    totalPrice = 0;
+}
+
     //this handles the snackdispenser (ref)
     public void setSnackDispenser(SnackDispenser dispenser) {
         this.snackDispenser = dispenser;

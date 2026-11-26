@@ -11,8 +11,15 @@ public class DispenseState implements StateOfVendingMachine {
 
     public void dispenseSnack(VendingMachine machine) {
         Snack snack = machine.getSelectedSnack();
+        boolean gotSnack = machine.getSnackDispenser().dispenseSnack(snack);
         
-        // add logic here for chain of responsibility (handler)
-        // behavior if money amount didn't meet
+        if (gotSnack) {
+            System.out.println("Purchase Successful! Snack dispensed.");
+        }
+        else {
+            System.out.println("Not enough quantitiy, returning money.");
+        }
+        
+        machine.setState(new IdleState());
     }
 }
