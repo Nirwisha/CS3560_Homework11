@@ -14,10 +14,10 @@ public class DispenseState implements StateOfVendingMachine {
         boolean gotSnack = machine.getSnackDispenser().dispenseSnack(snack);
         
         if (gotSnack) {
-            System.out.println("Purchase Successful! Snack dispensed.");
+            System.out.println("Purchase Successful! " + snack.getSnackName() + " dispensed.");
         }
         else {
-            System.out.println("Not enough quantitiy, returning money.");
+            System.out.println("Not enough " + snack.getSnackName() + ", returning money.");
         }
         
         machine.setState(new IdleState());
